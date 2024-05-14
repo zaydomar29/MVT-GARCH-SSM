@@ -41,7 +41,7 @@ if(p==2){
 m0 = Y[1,]
 C0 = diag(100,p)
 
-## Randim-walk tuning parameter
+## Random-walk tuning parameter
 L1 = chol(diag(c(0.49,0.0025,0.0025)))  
 
 
