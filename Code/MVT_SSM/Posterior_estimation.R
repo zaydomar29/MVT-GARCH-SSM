@@ -67,8 +67,19 @@ for(i in 2:nsims){
 
 
 
+## Posterior point estimates of the states
 
+state1 = lapply(sampled_theta, function(x) x[,1]) #do.call(sum, lapply(theta, function(x) x[,1]))
+state1.post = Reduce('+',state1)/length(est)
 
+state2 = lapply(sampled_theta, function(x) x[,2]) #do.call(sum, lapply(theta, function(x) x[,1]))
+state2.post = Reduce('+',state2)/length(est)
+
+state3 = lapply(sampled_theta, function(x) x[,3]) #do.call(sum, lapply(theta, function(x) x[,1]))
+state3.post = Reduce('+',state3)/length(est)
+
+state4 = lapply(sampled_theta, function(x) x[,4]) #do.call(sum, lapply(theta, function(x) x[,1]))
+state4.post = Reduce('+',state4)/length(est)
 
 
 
