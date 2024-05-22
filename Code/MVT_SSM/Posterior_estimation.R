@@ -31,9 +31,8 @@ predicted = list()
 sampled_theta = list()
 
 for(i in 2:nsims){
-  if(i %% 100 == 0){print(i)} 
-  # if(i %% 500 == 0){print(V.sample[[i-1]])}
-  # if(i %% 500 == 0){print(W.sample[[i-1]])}
+  if(i %% 500 == 0){print(i)} 
+  
   
   
   n = length(Y[,1])
