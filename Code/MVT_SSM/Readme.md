@@ -1,0 +1,4 @@
+This folder is for the non-GARCH multivariate SSMs with Gaussian errors.
+For the non-GARCH models the estimation process is pretty simple and
+a Bayesian conjugate analysis can be done using inverse-Wishart priors
+for the variance matrices.
