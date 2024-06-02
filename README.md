@@ -12,3 +12,4 @@ the functions are designed to run the 4D model. Simple modifications to the code
 to run models in any dimension. Currently, the goal is to write an R-package that will run the 
 functions for any dimension.
 
+This manuscript has been accepted to Statistics in Medicine for publication.
