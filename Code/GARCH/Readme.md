@@ -5,25 +5,25 @@ Brief description of the functions.
 **MvtKalFiltGarch**
 Details: Computes the Kalman-filter from a state space model with a constant correlation GARCH(1,1) model. <br>
 Arguments: Data, initializing constants for the state means and variances, and observational level variance and GARCH parameters. <br>
-Returns: Filtered state means and variance, 1-step ahead forecasts and smoothed means and variances.
+Returns: Filtered state means and variance, 1-step ahead forecasts and smoothed means and variances.  <br>
 
 **MvtKalFFBS**
-Details: Computes the backward-sampled states means and variances obtained once a Kalman-filter Iteration has run.
-Arguments: Output from a Kalman Filter.
-Returns: Backward-sampled states means and variances.
+Details: Computes the backward-sampled states means and variances obtained once a Kalman-filter Iteration has run.  <br>
+Arguments: Output from a Kalman Filter.  <br>
+Returns: Backward-sampled states means and variances.  <br>
 
-**MvtLkhd**
-Details: Computes the log likelihood of the data given the parameter values.
-Arguments: Data, GARCH parameters.
-Returns: Log of the likelihood of the model
+**MvtLkhd**  <br>
+Details: Computes the log likelihood of the data given the parameter values.  <br>
+Arguments: Data, GARCH parameters.  <br>
+Returns: Log of the likelihood of the model.  <br>
 
 
-**diwishart**
-Details: Fast Rcpp computation of the multivariate normal.
-Arguments: Data, means, covariances.
-Output: log of the density function.
+**diwishart**  <br>
+Details: Fast Rcpp computation of the multivariate normal.  <br>
+Arguments: Data, means, covariances.  <br>
+Output: log of the density function.  <br>
 
-**MVT_Garch_waic1**
-Details: Computes the WAIC based on the posterior estimates.
-Arguments: Data, posterior estimates.
-Output: WAIC.
+**MVT_Garch_waic1**  <br>
+Details: Computes the WAIC based on the posterior estimates.  <br>
+Arguments: Data, posterior estimates.  <br>
+Output: WAIC.  <br>
