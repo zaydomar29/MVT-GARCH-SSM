@@ -54,13 +54,15 @@ acc.rate.b1 = c(0,0)
 
 ## Start MCMC
 for(it in 1:sims){
-  if(it %% 100 == 0){print(it)}
-  if(it %% 100 == 0){print(old_param)}
-  if(it %% 100 == 0){print(rho.old)}
-  if(it %% 100 == 0){print(W.old)}
-  if(it %% 100 == 0){print(paste("acc.rate.a0:",acc.rate.a0/it))}
-  if(it %% 100 == 0){print(paste("acc.rate.a1:",acc.rate.a1/it))}
-  if(it %% 100 == 0){print(paste("acc.rate.b1:",acc.rate.b1/it))}
+  if(it %% 100 == 0){
+    print(it)
+    print(old_param)
+    print(rho.old)
+    print(W.old)
+    print(paste("acc.rate.a0:",acc.rate.a0/it))
+    print(paste("acc.rate.a1:",acc.rate.a1/it))
+    print(paste("acc.rate.b1:",acc.rate.b1/it))
+    }
   if(it %% 1000 == 0){
     par(mfrow = c(1,1))
     plot(a0.samp[,1], type = "l", ylim = c(0,1))
