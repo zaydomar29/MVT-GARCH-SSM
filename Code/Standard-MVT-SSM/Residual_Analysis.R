@@ -20,11 +20,11 @@ state4 = lapply(sampled_theta, function(x) x[,4]) #do.call(sum, lapply(theta, fu
 state4.post = Reduce('+',state4)/length(est)
 
 
-hr_forecast = lapply(predicted, function(x) x[,1])
-hr_forecast.post = Reduce('+',hr_forecast)/length(est)
+y1_forecast = lapply(predicted, function(x) x[,1])
+y1_forecast.post = Reduce('+',y1_forecast)/length(est)
 
-bp_forecast = lapply(predicted, function(x) x[,2])
-bp_forecast.post = Reduce('+',bp_forecast)/length(est)
+y2_forecast = lapply(predicted, function(x) x[,2])
+y2_forecast.post = Reduce('+',y2_forecast)/length(est)
 
 
 y3_forecast = lapply(predicted, function(x) x[,3])
@@ -34,3 +34,14 @@ y4_forecast = lapply(predicted, function(x) x[,4])
 y4_forecast.post = Reduce('+',y4_forecast)/length(est)
 
 
+##################################################################
+##################################################################
+##############                               #####################
+##############       WAIC for MVT mod        #####################
+##############                               #####################
+##################################################################
+##################################################################
+Rcpp::sourceCpp("./Functions/waic1_std.cpp")
+
+est = seq(1501,5e3,2)
+waic1 = MVT_waic1(V.sample[est], W.sample[est], Y,mode = "Std",FF = FF, GG=GG,m0=m0,C0=C0)
