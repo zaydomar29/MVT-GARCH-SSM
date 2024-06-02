@@ -12,3 +12,5 @@ to run models in any dimension. Currently, the goal is to write an R-package tha
 functions for any dimension.
 
 This manuscript has been accepted to Statistics in Medicine for publication.
+
+(02June2024)
