@@ -6,7 +6,7 @@ using namespace Rcpp;
 
 
 // [[Rcpp::export()]]
-List MVTKalffbsC(arma::mat Y, List filter_output){
+List BVT_KalffbsC(arma::mat Y, List filter_output){
   
   // Model specification
   arma::mat GG(2,2);
