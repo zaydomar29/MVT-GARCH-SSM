@@ -2,7 +2,7 @@ The Standard-MVT-SSM folder contains the commands and functions needed to run a 
 In the data generation process, we use generate independent series, however, this can be modified as needed.
 
 
-Bried description of the functions.
+Brief description of the functions.
 
 
 **MvtKalFilt** <br>
