@@ -7,7 +7,7 @@ Bried description of the functions.
 
 **MvtKalFilt**
 
-Details: Computes the Kalman-filter from a state space model.
+Details: Computes the Kalman-filter from a state space model. <be>
 Arguments: Data, initializing constants for the state means and variances, and observational level variance.
 Returns: Filtered state means and variance, 1-step ahead forecasts and smoothed means and variances.
 
