@@ -33,6 +33,9 @@ y3_forecast.post = Reduce('+',y3_forecast)/length(est)
 y4_forecast = lapply(predicted, function(x) x[,4])
 y4_forecast.post = Reduce('+',y4_forecast)/length(est)
 
+## Residual estimates
+e.post = Y-cbind(state1.post,state2.post,state3.post,state4.post)[-1,]
+pairs(~e.post[,1]+e.post[,2]+e.post[,3]+e.post[,4])
 
 ##################################################################
 ##################################################################
