@@ -5,7 +5,7 @@ In the data generation process, we use generate independent series, however, thi
 Bried description of the functions.
 
 
-**MvtKalFilt**
+**MvtKalFilt**\\
 Details: Computes the Kalman-filter from a state space model.
 Arguments: Data, initializing constants for the state means and variances, and observational level variance.
 Returns: Filtered state means and variance, 1-step ahead forecasts and smoothed means and variances.
