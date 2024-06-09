@@ -7,10 +7,9 @@ https://arxiv.org/pdf/2303.08735.pdf
 
 All files are written for R. All functions are written in RCPP.
 
-The files offer a quick guide to getting the multivariate-CCC-GARCH(1,1) up and running. The R-scripts are written to run generate the 4D-model as presented in the manuscript. Simple modifications to the code will allow users
-to run models in any dimension. Currently, the goal is to write an R-package that will run the 
-functions for any dimension.
+The files offer a quick guide to getting the multivariate-CCC-GARCH(1,1) up and running. The R-scripts are written to run generate the 4D-model as presented in the manuscript. Simple modifications to the code will allow users to run models in any dimension. Currently, the goal is to write an R-package that will run the 
+functions for any dimension. A step-by-step guide to implementing and estimating the model can be found in the GARCH folder.
 
-This manuscript has been accepted to Statistics in Medicine for publication.
+This manuscript has been submitted to Statistics in Medicine for peer review.
 
 (02June2024)
