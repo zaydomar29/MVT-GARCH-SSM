@@ -3,6 +3,10 @@
 #  Multivariate GARCH(1,1) model. In this example, we have a 4D-model
 #  as used in the paper. We guide the user through the steps stating
 #  from data generation, estimation and then analysis.
+#  The code provided is able to handle both the 2-D and higher-
+#  dimensional models. For dimensions greater than 2, we refer
+#  the user to the manuscript regarding the parametrization
+#  for the correlation matrix R.
 ################################################################
 
 
