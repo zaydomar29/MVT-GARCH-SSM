@@ -1,3 +1,11 @@
+################################################################
+#  This script guides the user through the implementation of the
+#  Multivariate GARCH(1,1) model. In this example, we have a 4D-model
+#  as used in the paper. We guide the user through the steps stating
+#  from data generation, estimation and then analysis.
+################################################################
+
+
 ################################
 ################################
 ###                          ###
@@ -116,11 +124,9 @@ cor.samp = list()
 if(ncol(Y)==2){
   cor.old = 0
   V.old = matrix(0)
-  cor.samp[[1]] = cor.old
 }else{
   cor.old = diag(1,ncol(Y))
   V.old = tcrossprod(cor.old/apply(cor.old, 1,norm, "2"))
-  cor.samp[[1]] = cor.old
 }
 
 
@@ -496,7 +502,7 @@ hist(e.t.post[,4], freq = F, breaks = 15)
 curve(dnorm(x,0,1),-4,4,add = T, col="red")
 
 
-
+# Scatter plots of the unnormalized residuals
 par(mfrow = c(1,1))
 pairs(~e.t.post[,1]+e.t.post[,2]+e.t.post[,3]+e.t.post[,4])
 
