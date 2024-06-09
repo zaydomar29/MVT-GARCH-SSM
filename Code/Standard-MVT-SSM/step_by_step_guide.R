@@ -6,8 +6,6 @@
 ################################
 ################################
 
-rm(list = ls())
-
 library(mvtnorm)
 library(MCMCpack)
 set.seed(202406)
