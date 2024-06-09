@@ -1,6 +1,8 @@
-The GARCH folder contains the commands and functions needed to run a multivariate constant correlation GARCH(1,1) SSM model. The data generation process, generate a 4-d model, which corresponds to a similar analysis done in the manuscript, however, this can be changed as intended.
+The GARCH folder contains the commands and functions needed to run a multivariate constant correlation GARCH(1,1) SSM model. The data generation process generates a 4-d model, which corresponds to a similar analysis done in the manuscript, however, this can be changed as intended. 
 
-Brief description of the functions.
+The R-script, step_by_step_guide.R, guides the user from model generation to estimation and residual analysis.
+
+Brief description of some of the key functions.
 
 **MvtKalFiltGarch**
 Details: Computes the Kalman-filter from a state space model with a constant correlation GARCH(1,1) model. <br>
@@ -16,12 +18,6 @@ Returns: Backward-sampled states means and variances.  <br>
 Details: Computes the log likelihood of the data given the parameter values.  <br>
 Arguments: Data, GARCH parameters.  <br>
 Returns: Log of the likelihood of the model.  <br>
-
-
-**diwishart**  <br>
-Details: Fast Rcpp computation of the multivariate normal.  <br>
-Arguments: Data, means, covariances.  <br>
-Output: log of the density function.  <br>
 
 **MVT_Garch_waic1**  <br>
 Details: Computes the WAIC based on the posterior estimates.  <br>
