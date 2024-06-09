@@ -164,8 +164,7 @@ y4_forecast.post = Reduce('+',y4_forecast)/length(est)
 
 Rcpp::sourceCpp("./Functions/waic1_std.cpp")
 
-est = seq(1501,5e3,2)
-waic1 = MVT_waic1(V.sample[est], W.sample[est], Y,mode = "Std",FF = FF, GG=GG,m0=m0,C0=C0)
+waic1 = MVT_waic1(V.sample, W.sample, Y,mode = "Std",FF = FF, GG=GG,m0=m0,C0=C0)
 
 
 #################################################################
