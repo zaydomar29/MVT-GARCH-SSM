@@ -1,3 +1,14 @@
+################################################################
+#  This script guides the user through the implementation of the
+#  standard SSM model. In this example, we have a 4D-model
+#  as used in the paper. We guide the user through the steps stating
+#  from data generation, estimation and then analysis.
+#  For simplicity we have used an independent structure between the series.
+#  Appropriately changing the matrices FF and GG gives us different
+#  model specifications, as mentioned in the manuscript.
+################################################################
+
+
 ################################
 ################################
 ###                          ###
