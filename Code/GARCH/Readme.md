@@ -2,7 +2,7 @@ The GARCH folder contains the commands and functions needed to run a multivariat
 
 The R-script, **step_by_step_guide.R**, guides the user from model generation to estimation and residual analysis. We have also provided a Knitted pdf file titled **Guide_to_estimation.pdf** that runs through the step-by-step implementation.
 
-Brief description of some of the key functions.
+The folder **/Functions/** contains the Rcpp files required for the implementation of the model as well as other Rcpp files needed to ensure the numerical stability of the estimation process. Following is a brief description of some of the key functions.
 
 **MvtKalFiltGarch**
 Details: Computes the Kalman-filter from a state space model with a constant correlation GARCH(1,1) model. <br>
@@ -10,12 +10,12 @@ Arguments: Data, initializing constants for the state means and variances, and o
 Returns: Filtered state means and variance, 1-step ahead forecasts and smoothed means and variances.  <br>
 
 **MvtKalFFBS**
-Details: Computes the backward-sampled states means and variances obtained once a Kalman-filter Iteration has run.  <br>
+Details: Computes the backward-sampled state means and variances obtained once a Kalman-filter Iteration has run.  <br>
 Arguments: Output from a Kalman Filter.  <br>
-Returns: Backward-sampled states means and variances.  <br>
+Returns: Backward-sampled state means and variances.  <br>
 
 **MvtLkhd**  <br>
-Details: Computes the log likelihood of the data given the parameter values.  <br>
+Details: Computes the log-likelihood of the data given the parameter values.  <br>
 Arguments: Data, GARCH parameters.  <br>
 Returns: Log of the likelihood of the model.  <br>
 
