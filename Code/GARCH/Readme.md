@@ -1,6 +1,6 @@
 The GARCH folder contains the commands and functions needed to run a multivariate constant correlation GARCH(1,1) SSM model. The data generation process generates a 4-d model, which corresponds to a similar analysis done in the manuscript, however, this can be changed as intended. 
 
-The R-script, step_by_step_guide.R, guides the user from model generation to estimation and residual analysis.
+The R-script, step_by_step_guide.R, guides the user from model generation to estimation and residual analysis. We have also provided a Knitted pdf file titled Guide_to_estimation that runs through the step-by-step implementation.
 
 Brief description of some of the key functions.
 
