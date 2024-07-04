@@ -7,4 +7,4 @@ The files offer a quick guide to getting the multivariate-CCC-GARCH(1,1) up and 
 
 Step-by-step guides for the implementation are also provided.
 
-This manuscript has been by Statistics in Medicine on 02-July-2024. DOI: 10.1002/sim.10154
+This manuscript has been by Statistics in Medicine on 02-July-2024. DOI: https://doi.org/10.1002/sim.10154
